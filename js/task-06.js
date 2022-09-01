@@ -13,4 +13,8 @@ refs.inputEl.addEventListener('blur', (event) => {
     refs.inputEl.classList.add('invalid');
     refs.inputEl.classList.remove('valid');
   }
+
+  if (numberOfEnteredChars === 0) {
+    refs.inputEl.classList.remove('invalid');
+  }
 });
